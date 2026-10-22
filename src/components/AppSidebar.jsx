@@ -100,7 +100,7 @@ export default function AppSidebar({
         sx={{ px: 1.5, mb: 5, cursor: "pointer" }}
         onClick={() => navigate("/")}
       >
-        social.
+        socially.
       </Typography>
 
       <Stack spacing={1}>
