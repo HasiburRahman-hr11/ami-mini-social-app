@@ -1,0 +1,34 @@
+
+#root {
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(109, 74, 255, 0.2);
+}
+
+button,
+a,
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
+  color: inherit;
+}
+
+img {
+  user-select: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
