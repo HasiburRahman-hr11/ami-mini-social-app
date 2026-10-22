@@ -83,13 +83,13 @@ function UserCard({ person, currentUser, tab, onFollowChange }) {
           p: 2,
           "&:last-child": { pb: 2 },
           flexDirection:{xs: "column", sm: "row"},
-          justifyContent:"space-between"
+          justifyContent:"space-between",
         }}
       >
         <Box
           component={Link}
           to={`/users/${person.username}`}
-          sx={{ display: "flex", gap: "20px", textDecoration: "none" }}
+          sx={{ display: "flex", gap: "20px", textDecoration: "none", width:{xs: "100%", sm: "auto"} }}
         >
           <Avatar
             src={person.profilePicture || ""}
