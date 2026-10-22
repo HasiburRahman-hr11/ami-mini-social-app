@@ -7,6 +7,7 @@ import { ProtectedRoute, GuestRoute } from "./components/RouteGuards";
 import AppSidebar from "./components/AppSidebar";
 import MobileNavigation from "./components/MobileNavigation";
 import CreatePostDialog from "./components/CreatePostDialog";
+import ScrollToTop from "./components/ScrollToTop";
 
 import FeedPage from "./pages/FeedPage";
 import LoginPage from "./pages/LoginPage";
@@ -30,6 +31,7 @@ function SocialLayout({ mode, toggleTheme }) {
 
   return (
     <Box sx={{ minHeight: "100vh" }}>
+      <ScrollToTop />
       <AppSidebar
         mode={mode}
         toggleTheme={toggleTheme}
